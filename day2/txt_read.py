@@ -16,7 +16,15 @@ import os
 #     print(txt)
 #     print(type(txt))
 
+#list.reverse() => 리스트 뒤집기 ex)a.reverse()
 with open ('number.txt.txt', 'r') as f:
     read = f.readlines()
     b = list(reversed(read))
     print(b)
+    
+with open ('number.txt.txt', 'r') as f:
+    read = f.readlines()
+with open ('number.reversed.txt', 'w') as file:
+    for i in range(len(numbers)) :
+        file.write(number[len(numbers)-1])
+

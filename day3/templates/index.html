@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "ko">
+    <head>
+        <meta charset = "utf-8">
+
+        <title>첫번째 HTML</title>
+        <style>
+        /* 태그 선택자 */
+        h1{
+            color: red;
+            text-align: center;
+            
+        }
+        p{
+            color: blue;
+        }
+        /* 클래스 선택자 */
+        .red{
+            color: red;
+        }
+        /* 아이디 선택자 */
+        #pink{
+            color: pink;
+        }
+        img{
+            border-image: 1dp
+        }
+        /* 우선순위
+        id > class > 태그
+        이유: id는 문서에서 오직 하나만 존재할 수 있다.
+              class는 문서에서 여러개 존재할 수 있다.
+              태그는 기본 */
+        </style>
+        
+    </head>
+    <body>
+          <H1>hAPPY HACKING</H1> 
+          <H2 id = pink class = red>안녕하세요</H2>
+          <P>내용, 문단을 작성합니다.</P>
+            <p class = "red"> 나는 빨강색이고 싶음</p>
+          <br>
+          <br>
+
+
+          <!-- a href태그로 해당하는 링크를 설정한다. -->
+          <a href="www.google.com">구글 고</a>
+          <!--이미지 태그는 닫는 태그가 없다.-->
+          <!-- src 속성은 이미지의 경로이다.-->
+          <img width = "600" height = "600" src = "https://avatars3.githubusercontent.com/u/45910488?s=400&v=4">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/Mi_ZdGpUDHg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        
+    </body>
+</html>
