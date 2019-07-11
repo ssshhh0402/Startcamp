@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        {%  if{{answer}} == '정답' %}
+        <h1><a href="./self.html">정답! 다른게임하러가기</a> </h1>
+    
+        {%  elif{{answer}} == '큼' %}
+        <h1>입력하신 값이 숫자보다 큽니다</h1> 
+        {% elif {{answer}} == '작음' %}
+        <h1> 입력하신 값이 숫자보다 작습니다</h1>
+        {% endif %}
+        <input type = "text" name = "say">
+        <input type = "submit", value= "확인!">
+    </form>
+</body>
+</html>

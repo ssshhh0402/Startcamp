@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    {% if name == '1' %}
+    <h1>가위바위보 게임!</h1>
+    <form action = "/rsp">
+        <input type = "text" value = "뭐낼래">
+        <input type = "submit" value = "선택">
+
+    </form>
+    {% elif name == '2' %}
+    <h1> 숫자게임 </h1>
+    <form action = "/number">
+       <input type = "submit" value = "하러가기!">
+</form>
+    {% elif name == '3' %}
+    <h1> 사진 찾기</h1>
+    <form action = "/picture">
+        <input type = "color" name = "color">
+        <input type = "submit" value = "선택">
+    </form>
+    {% endif %}
+</body>
+</html>
