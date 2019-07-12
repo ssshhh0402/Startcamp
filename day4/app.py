@@ -74,5 +74,21 @@ def number():
 def self():
     return render_template('self.html')
 
+
+
+
+@app.route('/lotto')
+def lotto(): 
+    return render_template('lotto.html')
+
+
+@app.route('/lotto_result')
+def lotto2():
+    user = request.args.get('name')
+    l_num = request.args.get('num')
+    random.seed(l_num)   # 난수를 발생시키지만 입력받은 값 이상의 난수를 생성한다? Sorry?
+    l_number = random.sample(range(1, 46), 6)
+    return render_template('lotto_result.html',name = user, number = l_num, l_number = l_number)
+
 if __name__ == '__main__':
     app.run(debug = True)
